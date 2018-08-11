@@ -79,10 +79,10 @@
     4. Environments should be entirely isolated from eachother
 
 10. **Eventing and Logging**
-   1. At some time everything that the application does or has happen to it will be of interest to someone.
-   2. Future business logic will want to work on arbitrary past data.
-   3. Immutable data + Events + Event Handlers as Mutators = Time Travelling Logic
-   4. Keep a master event log if possible. Forever.
+    1. At some time everything that the application does or has happen to it will be of interest to someone.
+    2. Future business logic will want to work on arbitrary past data.
+    3. Immutable data + Events + Event Handlers as Mutators = Time Travelling Logic
+    4. Keep a master event log if possible. Forever.
 
 11. **Profiling**
     1. At all times the resource usage of the application should be known as well as the history of that usage.
