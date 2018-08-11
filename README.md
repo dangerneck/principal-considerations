@@ -18,16 +18,17 @@
 10. **Eventing and Logging**
 11. **Profiling**
 12. **Administrative and Tertiary Processes**
-13. **Software Life into Maturity** 
-14. **Security**
+13. **Continuous Integration / Continuous Deployment**
+14. **Software Life into Maturity** 
+15. **Security**
 
 ## Second-tier Considerations
 
 1. **Code**
     1. Version control
-    2. Continuous integration policy
-    3. Sane defaults
-    4. Hygeine
+    2. Clear branching and commit strategy
+    2. Sane defaults
+    3. Hygeine for code and version control
 
 2. **Dependencies**
     1. Package managers
@@ -94,13 +95,23 @@
     4. Arbitrary reports on anything at all.
     5. Auditing
     6. Erasing and locking down things if required
+    
+13. **Continuous Integration / Continuous Deployment**
+    1. Committing work to version control can be seen as a logical step forward i.e. feature completed, bug fixed, refactor completed. This can and should be used to pass the software through all other safely automatable steps.
+    2. Clear branching and commit strategy allows predictable results from watching for changes in a code repository.
+    3. Well defined, safe and verbose Builds allow automatic builds from changes in watched code repositories.
+    4. Separated and complete Testing suites allow for maximum reasonable testing to be done after a Build.
+    5. Isolated predictable environments that provision configuration inputs means that built artifacts can be moved to arbitrary environments without needing forward knowledge about their differences or effects of being present in those environments.
+    6. Run strategies allow for any programmable agent to check the status, stop the application, update artifacts, and then start it again. Process managers and profiling also allow for at least a basic level of self-healing applications.
+    7. Eventing and Logging allows the process of preparing and deploying the application can be part of the application's auditable and watchable master event log. This provides a logical entry point for Software Life into Maturity considerations.
+    8. In conclusion: **Commit** -> **Build** -> **Test** -> **Deploy** -> **Run** -> **Log** / **Profile** / **Administer** -> **Nice**. Or any subset or superset of that flow.
 
-13. **Software Life into Maturity** 
+14. **Software Life into Maturity** 
     1. Maintenance such as patches, upgrades, breaking changes to dependencies
     2. The application should communicate somehow any foreseen problems occurring
     3. There should be some strategy or policy on how to manage required resources over time - up and down.
 
-14. **Security**
+15. **Security**
     1. Every line of code, every dependency, every service, every environment, every configuration, every Event, every generated log, all data, all processes, all communications, all side-channels must be maintainable, patchable, auditable and assumed to be under constant opportunistic attack
     2. Obscurity is not security
     3. The application will be exploited and broken so there must be a strategy for identifying, managing, understanding and cleaning-up after a breach.
