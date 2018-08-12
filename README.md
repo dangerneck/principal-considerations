@@ -1,8 +1,26 @@
 # Principal Considerations
-## or
+or
 ## How to try to develop web applications without getting in your own way or ruining it for yourself and others or being a dingus.
 
+The following is a set of *important things* to consider in the development of a web application. Some are written as rules to follow and some are written as general and open suggestions on how to avoid these *important things* from becoming a problem or -- especially -- surprising you then derailing you, your team or project entirely. 
 
+It is not essential to have strategy for every single thing below, but it is always a good idea to at least consider how it may effect your application in its lifetime and communicate somehow an awareness of them in documentation for the future developers that inherit your application. And as with any rule or principle put forth once they are learned or known they can be broken or ignored. Put another way: learn the rules so you know how to break them most effectively.
+
+The [12 Factor App](https://12factor.net/) was a starting point for this, so we owe a great deal to that, but I found that to be far too specific in some points   and entirely missing other points.
+
+This is also an attempt at me articulating succinctly the combined experience of my career - without going into specific implementations too much. 
+
+*I invite all suggestions and comments. Submit a pull request or contact me.* 
+
+This is only useful as far as it guides folks in a positive direction and offers signposts for danger down the road. Personally I'm fed up with seeing the same short-sighted and (bluntly) boring problems coming up in projects I work on. So let's end the perpetual MVP -> Beta -> Crash And Burn -> Start Again cycle of many web applications and stop the slow degradation of program quality in general.
+
+Also don't just say containerizing solves everything you dingus you're just hiding the complexity and delaying disaster till something changes and it doesn't work anymore and absolutely nobody knows how to deal with it!
+
+### Roadmap
+
+**This is very much a first draft.** The wording is inconsistent, the depth of thinking in each consideration varies, etc etc. 
+
+Over time there will be a *simmering* of concepts and wording to reduce this into its most potent essence. You gotta reduce your sauce, otherwise its just weird flavoured water that you're pouring on your meal. Just eat soup if you want to do that.
 
 ## Top-tier Considerations
 
