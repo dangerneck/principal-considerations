@@ -47,10 +47,11 @@ Over time there will be a *simmering* of concepts and wording to reduce this int
     2. Clear branching and commit strategy
     2. Sane defaults
     3. Hygeine for code and version control
+    4. Semantic versioning to allow your project to become an easily manageable dependecy for something else
 
 2. **Dependencies**
     1. Package managers
-    2. Patching and upgrading
+    2. Semantic versioning allowing dependency updates and changes to be managed in a standard and predictable way
     3. Isolation and separation of concerns
 
 3. **Required Services**
