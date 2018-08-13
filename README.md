@@ -20,7 +20,7 @@ Also don't just say containerizing solves everything you dingus you're just hidi
 
 **This is very much a first draft.** The wording is inconsistent, the depth of thinking in each consideration varies, etc etc. 
 
-Over time there will be a *simmering* of concepts and wording to reduce this into its most potent essence. You gotta reduce your sauce, otherwise its just weird flavoured water that you're pouring on your meal. Just eat soup if you want to do that.
+Over time there will be a *simmering* of concepts and wording to reduce this into its most potent essence. You gotta reduce your sauce, otherwise its just weird flavoured water that you're pouring on your meal. Just drink soup if you want to do that.
 
 ## Top-tier Considerations
 
