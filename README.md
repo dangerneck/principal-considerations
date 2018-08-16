@@ -173,16 +173,16 @@ Here I will put what specific approaches I currently enjoy for all of the above.
 4. **Configuration**
     1. **Config should be provisioned by some external method or service so that configuration leads to automatic flexibility and hot swapping of configurable elements.**
         - [dotenv](https://github.com/motdotla/dotenv) is always a great place to start. But any kind of config provisioning is good as long as you treat it like a particularly important Required Service
-    2. Config is never in code, because if it is it becomes code.
+    2. **Config is never in code, because if it is it becomes code.**
         - There are no exceptions
 
 5. **Build**
-    1. Transformation of code, dependencies, assets and configuration into a runnable package within an environment
+    1. **Transformation of code, dependencies, assets and configuration into a runnable package within an environment**
         - npm + some kind of shell script is a good start, and often as far as you need to go
         - webpack if you're doing front-end js
-    2. Easily testable (preferrably automatically tested)
+    2. **Easily testable (preferrably automatically tested)**
         - npm + mocha for the code portion of testing
-    2. Indempotent, safe, logged, verbose processes.
+    2. **Indempotent, safe, logged, verbose processes.**
         - design the build and test steps so they follow the Open/Closed principle, and also make sense and don't do not-immediately-obvious things that are important!
 
 6. **Document**
