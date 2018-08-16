@@ -93,10 +93,11 @@ Over time there will be a *simmering* of concepts and wording to reduce this int
     3. Profiling and watchdog processes for real-time information on status and resource usage.
 
 9. <a name="Environments">**Environments**</a>
-    1. Configuration is provisioned by environments as necessary
+    1. Required Services such as configuration can be provisioned by environments
     2. No code changes should be required for moving from one evironment to another
-    3. All environments should be as close to equivalent as possible
-    4. Environments should be entirely isolated from eachother
+    3. Staged environments should be as close to equivalent as possible 
+    4. Environments should be entirely isolated from eachother, if they are not then they should be considered a single logical environment
+    5. Environments are a major source of erosion, so resource usage and environmental side effects should be monitored and constrained.
 
 10. <a name="EventingandLogging">**Eventing and Logging**</a>
     1. At some time everything that the application does or has happen to it will be of interest to someone.
@@ -220,10 +221,11 @@ Here I will put what specific approaches I currently enjoy for all of the above.
     3. **Profiling and watchdog processes for real-time information on status and resource usage.**
 
 9. **Environments**
-    1. **Configuration is provisioned by environments as necessary**
+    1. **Required Services such as configuration can be provisioned by environments**
     2. **No code changes should be required for moving from one evironment to another**
-    3. **All environments should be as close to equivalent as possible**
-    4. **Environments should be entirely isolated from eachother**
+    3. **Staged environments should be as close to equivalent as possible**
+    4. **Environments should be entirely isolated from eachother, if they are not then they should be considered a single logical environment**
+    5. **Environments are a major source of erosion, so resource usage and environmental side effects should be monitored and constrained.**
 
 10. **Eventing and Logging**
     1. **At some time everything that the application does or has happen to it will be of interest to someone.**
