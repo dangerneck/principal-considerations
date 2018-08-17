@@ -42,7 +42,7 @@ Over time there will be a *simmering* of concepts and wording to reduce this int
 
 ## Second-tier Considerations
 
-1. <a  href="/Code.md.md" name="Code">**Code**</a>
+1. <a  href="/Code.md" name="Code">**Code**</a>
     1. Version control
     2. Clear branching and commit strategy
     2. Sane defaults
@@ -59,7 +59,7 @@ Over time there will be a *simmering* of concepts and wording to reduce this int
     2. Wrap and/or abstract environment/driver specific stuff so a configuration change can do it
     3. Tolerate unavailability with retries, queueing, volatile state usage.
 
-4. <a  href="/onfiguration" name="Configuration">**Configuration**</a>
+4. <a  href="/Configuration.md" name="Configuration">**Configuration**</a>
     1. Config should be provisioned by environment so that configuration leads to automatic flexibility and hot swapping of configurable elements.
     2. Config is never in code, because if it is it becomes code.
 
